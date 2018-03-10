@@ -1,0 +1,5 @@
+[user]
+	name = Terry Brashaw
+	email = terrybrashaw@gmail.com
+[credential]
+	helper = cache
