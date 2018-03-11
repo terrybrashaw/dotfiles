@@ -164,7 +164,7 @@ bindsym XF86AudioPrev exec cmus-remote --prev
 exec_always --no-startup-id ~/.scripts/xsettings.sh
 
 # wallpaper
-exec --no-startup-id ~/.fehbg
+exec --no-startup-id ~/.scripts/fehbg
 
 # compositor
 # exec --no-startup-id compton
