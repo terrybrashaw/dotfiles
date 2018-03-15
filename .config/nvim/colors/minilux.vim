@@ -16,6 +16,7 @@ hi CursorLine           ctermfg=NONE            ctermbg=NONE    cterm=underline 
 hi CursorLineNr         ctermfg=NONE            ctermbg=NONE    cterm=NONE      guifg=#aaaaaa   guibg=#f0f0f0   gui=bold
 hi LineNr               ctermfg=NONE            ctermbg=NONE    cterm=NONE      guifg=#aaaaaa   guibg=#f0f0f0   gui=NONE
 hi MatchParen           ctermfg=NONE            ctermbg=NONE    cterm=underline
+hi ColorColumn                                  ctermbg=darkgrey
 
 " Syntax highlightings
 hi Character            ctermfg=red             ctermbg=NONE    cterm=NONE      guifg=#A31515   guibg=NONE      gui=NONE

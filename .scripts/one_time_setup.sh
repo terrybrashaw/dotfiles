@@ -43,6 +43,7 @@ sudo xbps-install -Sy \
     pavucontrol \
     weechat \
     xcalib \
+    xclip \
     tokei \
     chromium \
     firefox \

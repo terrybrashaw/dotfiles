@@ -8,6 +8,9 @@ elseif exists("b:current_syntax")
 	finish
 endif
 
+" Default width defined by the Rust syle guide
+set colorcolumn=100
+
 " Control flow keywords
 syn keyword     rustControl             match if else break continue return yield for in loop while
 
