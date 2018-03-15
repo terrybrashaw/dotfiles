@@ -3,3 +3,7 @@
 	email = terrybrashaw@gmail.com
 [credential]
 	helper = store
+[alias]
+        ll = log --pretty=format:'%C(magenta)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset'
+        lg = log  --graph --pretty=format:'%C(magenta)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset'
+

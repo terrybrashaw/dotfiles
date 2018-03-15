@@ -18,6 +18,7 @@ sudo xbps-install -Sy \
     neovim \
     tmux \
     git \
+    tig \
     ripgrep \
     fzf \
     fd \
