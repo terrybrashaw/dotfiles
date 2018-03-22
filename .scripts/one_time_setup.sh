@@ -1,17 +1,17 @@
-# update system
+# Update system.
 sudo xbps-install -Su
 
-# install ntp daemon
+# Install NTP daemon.
 # Chrony is supposed to be a newer, superior implementation of ntp (versus ntpd and openntp).
 # Installing Chrony disables access to hwclock (and I don't know why).
 sudo xbps-install -Sy chrony
 sudo ln -s /etc/sv/chronyd/ /var/service/
 sudo sv start chronyd
 
-# install pkg-config
+# Install pkg-config.
 sudo xbps-install -Sy pkg-config
 
-# install user applications
+# Install user applications.
 sudo xbps-install -Sy \
     void-repo-nonfree \
     fish-shell \
@@ -67,28 +67,19 @@ sudo xbps-install -Sy \
     twemoji \
     gucharmap \
     zip \
-    unzip
+    unzip \
+    caddy
 
-# needed for AwesomeWM:
-# * lua52
-# * lua52-devel
-# * make
-# * cmake
-# * libxcb 
-# * libxcb-devel
-# * xcb-cursor
-# * xcb-cursor-devel
-
-# set fish as the default shell
+# Set fish as the default shell.
 sudo runuser -l terry -c 'chsh -s /usr/bin/fish'
 
-# setup git credentials
+# Setup git credentials.
 git config --global user.name "Terry Brashaw"
 git config --global user.email "terrybrashaw@gmail.com"
 
-# install the nightly toolchain for rust
+# Install the nightly toolchain for Rust.
 rustup toolchain install nightly
 rustup default nightly
 
-# install rust applications
+# Install Rust applications.
 cargo install clippy
