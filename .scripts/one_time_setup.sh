@@ -23,6 +23,7 @@ sudo xbps-install -Sy \
     fzf \
     fd \
     ranger \
+    xdg-utils \
     alacritty \
     curl \
     libcurl \
