@@ -69,7 +69,8 @@ sudo xbps-install -Sy \
     gucharmap \
     zip \
     unzip \
-    caddy
+    caddy \
+    screenkey
 
 # Set fish as the default shell.
 sudo runuser -l terry -c 'chsh -s /usr/bin/fish'
