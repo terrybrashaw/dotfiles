@@ -16,8 +16,3 @@ set PATH /usr/local/bin $PATH
 # if status --is-interactive
 #     eval sh $HOME/.config/base16-shell/scripts/base16-default-dark.sh
 # end
-
-# Start X at login
-if status --is-login
-    exec startx -- -keeptty
-end

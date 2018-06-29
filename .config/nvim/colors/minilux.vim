@@ -59,3 +59,15 @@ hi Define               ctermfg=NONE            ctermbg=green   cterm=NONE      
 hi rustSelf             ctermfg=NONE            ctermbg=NONE    cterm=bold      guifg=NONE      guibg=NONE      gui=bold
 hi rustFuncCall         ctermfg=NONE            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
 hi rustQuestionMark     ctermfg=NONE            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+
+" CSS syntax
+hi cssSelectorOp        ctermfg=NONE            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssSelectorOp2       ctermfg=NONE            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssAttrComma         ctermfg=NONE            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssProp              ctermfg=NONE            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssClassName         ctermfg=magenta         ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssClassNameDot      ctermfg=magenta         ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssIdentifier        ctermfg=yellow          ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssPseudoClass       ctermfg=blue            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssPseudoClassId     ctermfg=blue            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi cssPseudoClassFn     ctermfg=blue            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
