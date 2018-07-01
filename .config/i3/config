@@ -36,6 +36,9 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 bindsym $mod+f exec --no-startup-id rofi -show run
 
+focus_on_window_activation focus
+workspace_auto_back_and_forth yes
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -80,46 +83,54 @@ bindsym $mod+space focus mode_toggle
 # focus the child container
 #bindsym $mod+d focus child
 
-# specialized workspaces
-set $workspace_browser          "1: Firefox "
-set $workspace_work             "2: Work"
-set $workspace_chat             "F1: Chat "
-set $workspace_music            "F2: Music "
-set $workspace_recording        "F3: Recording "
+set $workspace_1 "1:[1]"
+set $workspace_2 "2:[2]"
+set $workspace_3 "3:[3]"
+set $workspace_4 "4:[4]"
+set $workspace_5 "5:[5]"
+set $workspace_6 "6:[6]"
+set $workspace_7 "7:[7]"
+set $workspace_8 "8:[8]"
+set $workspace_9 "9:[9]"
+set $workspace_10 "10:[10]"
 
-assign [class="Firefox"] $workspace_browser
-assign [class="TeamSpeak 3"] $workspace_chat
-assign [class="obs"] $workspace_recording
+set $workspace_f1 "11:[F1]"
+set $workspace_f2 "12:[F2]"
+set $workspace_f3 "13:[F3]"
+
+# assign [class="Chromium"] $workspace_browser
+# assign [class="TeamSpeak 3"] $workspace_chat
+# assign [class="obs"] $workspace_recording
 
 # switch to workspace
-bindsym $mod+1 workspace $workspace_browser
-bindsym $mod+2 workspace $workspace_work
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
-bindsym $mod+F1 workspace $workspace_chat
-bindsym $mod+F2 workspace $workspace_music
-bindsym $mod+F3 workspace $workspace_recording
+bindsym $mod+1 workspace $workspace_1
+bindsym $mod+2 workspace $workspace_2
+bindsym $mod+3 workspace $workspace_3
+bindsym $mod+4 workspace $workspace_4
+bindsym $mod+5 workspace $workspace_5
+bindsym $mod+6 workspace $workspace_6
+bindsym $mod+7 workspace $workspace_7
+bindsym $mod+8 workspace $workspace_8
+bindsym $mod+9 workspace $workspace_9
+bindsym $mod+0 workspace $workspace_10
+bindsym $mod+F1 workspace $workspace_f1
+bindsym $mod+F2 workspace $workspace_f2
+bindsym $mod+F3 workspace $workspace_f3
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $workspace_browser
-bindsym $mod+Shift+2 move container to workspace $workspace_work
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
-bindsym $mod+Shift+F1 move container to workspace $workspace_chat
-bindsym $mod+Shift+F2 move container to workspace $workspace_music
-bindsym $mod+Shift+F3 move container to workspace $workspace_recording
+bindsym $mod+Shift+1 move container to workspace $workspace_1
+bindsym $mod+Shift+2 move container to workspace $workspace_2
+bindsym $mod+Shift+3 move container to workspace $workspace_3
+bindsym $mod+Shift+4 move container to workspace $workspace_4
+bindsym $mod+Shift+5 move container to workspace $workspace_5
+bindsym $mod+Shift+6 move container to workspace $workspace_6
+bindsym $mod+Shift+7 move container to workspace $workspace_7
+bindsym $mod+Shift+8 move container to workspace $workspace_8
+bindsym $mod+Shift+9 move container to workspace $workspace_9
+bindsym $mod+Shift+0 move container to workspace $workspace_10
+bindsym $mod+Shift+F1 move container to workspace $workspace_f1
+bindsym $mod+Shift+F2 move container to workspace $workspace_f2
+bindsym $mod+Shift+F3 move container to workspace $workspace_f3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -146,8 +157,14 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     status_command i3status
+    strip_workspace_numbers yes
     colors {
+        statusline #FFFFFF
         background #000000
+        focused_workspace #000000 #00FF00 #000000
+        inactive_workspace #000000 #000000 #FFFFFF
+        active_workspace #000000 #000000 #00FF00
+        urgent_workspace #000000 #FF0000 #000000
     }
 }
 

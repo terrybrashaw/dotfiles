@@ -33,7 +33,7 @@ set expandtab
 set shiftwidth=4
 set nosmartindent
 set scrolloff=4
-set mouse=a
+" set mouse=a
 " set cursorline
 " set termguicolors
 

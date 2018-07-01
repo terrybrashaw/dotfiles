@@ -1,7 +1,10 @@
 general {
-        colors = true
-        interval = 5
-        separator = ""
+    colors = false
+    interval = 5
+    separator = ""
+    # color_good = "#FFFFFF"
+    # color_degraded = "#FFFFFF"
+    # color_bad = "#FF0000"
 }
 
 order += "disk /"
@@ -10,7 +13,7 @@ order += "tztime local"
 
 ethernet _first_ {
         # if you use %speed, i3status requires root privileges
-        format_up = " %ip (%speed)"
+        format_up = " %ip"
         format_down = " down"
 }
 
