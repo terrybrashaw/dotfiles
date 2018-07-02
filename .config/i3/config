@@ -83,16 +83,16 @@ bindsym $mod+space focus mode_toggle
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace_1 "1:[1]"
-set $workspace_2 "2:[2]"
-set $workspace_3 "3:[3]"
-set $workspace_4 "4:[4]"
-set $workspace_5 "5:[5]"
-set $workspace_6 "6:[6]"
-set $workspace_7 "7:[7]"
-set $workspace_8 "8:[8]"
-set $workspace_9 "9:[9]"
-set $workspace_10 "10:[10]"
+set $workspace_1 "1:I"
+set $workspace_2 "2:II"
+set $workspace_3 "3:III"
+set $workspace_4 "4:IV"
+set $workspace_5 "5:V"
+set $workspace_6 "6:VI"
+set $workspace_7 "7:VII"
+set $workspace_8 "8:VIII"
+set $workspace_9 "9:IX"
+set $workspace_10 "10:X"
 
 set $workspace_f1 "11:[F1]"
 set $workspace_f2 "12:[F2]"
@@ -161,9 +161,9 @@ bar {
     colors {
         statusline #FFFFFF
         background #000000
-        focused_workspace #000000 #00FF00 #000000
+        focused_workspace #000000 #ffcc66 #000000
         inactive_workspace #000000 #000000 #FFFFFF
-        active_workspace #000000 #000000 #00FF00
+        active_workspace #000000 #000000 #ffcc66
         urgent_workspace #000000 #FF0000 #000000
     }
 }
