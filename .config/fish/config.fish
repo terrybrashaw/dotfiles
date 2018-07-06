@@ -1,6 +1,6 @@
-set -x EDITOR "/opt/nvim/nvim"
-set -x BROWSER "firefox"
-set -x TERMINAL "/opt/alacritty/alacritty"
+set -x EDITOR "nvim"
+set -x BROWSER "chromium"
+set -x TERMINAL "alacritty"
 
 # Disable the fish greeting message.
 set fish_greeting

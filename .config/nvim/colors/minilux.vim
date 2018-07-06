@@ -71,3 +71,10 @@ hi cssIdentifier        ctermfg=yellow          ctermbg=NONE    cterm=NONE      
 hi cssPseudoClass       ctermfg=blue            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
 hi cssPseudoClassId     ctermfg=blue            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
 hi cssPseudoClassFn     ctermfg=blue            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+
+" Lua
+hi luaFunction          ctermfg=blue            ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi luaLoopBlock         ctermfg=magenta         ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi luaRepeat            ctermfg=magenta         ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi luaBlock             ctermfg=magenta         ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
+hi luaCond              ctermfg=magenta         ctermbg=NONE    cterm=NONE      guifg=NONE      guibg=NONE      gui=NONE
