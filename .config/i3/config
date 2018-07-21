@@ -94,9 +94,9 @@ set $workspace_8 "8:VIII"
 set $workspace_9 "9:IX"
 set $workspace_10 "10:X"
 
-set $workspace_f1 "11:[F1]"
-set $workspace_f2 "12:[F2]"
-set $workspace_f3 "13:[F3]"
+set $workspace_f1 "11:F1"
+set $workspace_f2 "12:F2"
+set $workspace_f3 "13:F3"
 
 assign [class="discord"] $workspace_f1
 assign [class="qBittorrent"] $workspace_f2
@@ -157,6 +157,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     status_command i3status
+    # status_command i3blocks
     strip_workspace_numbers yes
     colors {
         statusline #FFFFFF
@@ -178,7 +179,7 @@ bindsym XF86AudioNext exec cmus-remote --next
 bindsym XF86AudioPrev exec cmus-remote --prev
 
 exec_always --no-startup-id ~/.scripts/xsettings.sh
-exec --no-startup-id "i3-msg 'focus output DisplayPort-0; workspace 12:[F2]; append_layout /home/terry/.config/i3/workspace-12.json'"
+exec --no-startup-id "i3-msg 'focus output DisplayPort-0; workspace 12:F2; append_layout /home/terry/.config/i3/workspace-12.json'"
 exec --no-startup-id "i3-msg 'focus output DisplayPort-1; workspace 1:I'"
 exec --no-startup-id "sleep 2; exec teamspeak3"
 exec --no-startup-id "sleep 2; exec qbittorrent"
