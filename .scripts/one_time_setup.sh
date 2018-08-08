@@ -70,7 +70,9 @@ sudo xbps-install -Sy \
     zip \
     unzip \
     caddy \
-    screenkey
+    screenkey \
+    zathura \
+    zathura-pdf-mupdf
 
 # Set fish as the default shell.
 sudo runuser -l terry -c 'chsh -s /usr/bin/fish'
