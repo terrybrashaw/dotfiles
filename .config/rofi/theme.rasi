@@ -1,0 +1,36 @@
+* {
+    background-color: inherit;
+    text-color: inherit;
+    font: inherit;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#window {
+    background-color: #fcfcfc;
+    text-color: black;
+}
+
+#mainbox {
+}
+
+#inputbar {
+    padding: 10px 10px 9px 10px;
+    font: "sansserif 48px"; 
+    children: [entry];
+}
+
+#listview {
+    background-color: #c1cad6;
+    text-color: black;
+}
+
+#element {
+    padding: 5px 10px;
+}
+
+#element selected {
+    background-color: #4392f1;
+    text-color: white;
+}
