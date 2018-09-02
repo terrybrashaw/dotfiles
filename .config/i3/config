@@ -11,14 +11,17 @@
 
 set $mod Mod4
 
-new_window pixel 0
 gaps inner 0
 gaps outer 0
 
-client.focused_inactive #ffee00 #ffffff #000000 #BF360C #dee2e6
-client.unfocused        #ECEFF3 #ffffff #000000 #ffffff #dee2e6
-client.focused          #ffee00 #ffffff #000000 #BF360C #4dadf7
-client.background       #ffffff
+client.focused          #ffcc66 #ffcc66 #000000 #ff0000 #ffcc66
+client.focused_inactive #000000 #000000 #ffffff #ff0000 #000000
+# client.unfocused        #000000 #000000 #ffffff #ffffff #000000
+# client.urgent
+client.background       #000000
+
+default_border pixel 0
+default_floating_border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -156,6 +159,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+    # status_command polybar
     status_command i3status
     # status_command i3blocks
     strip_workspace_numbers yes
@@ -181,9 +185,10 @@ bindsym XF86AudioPrev exec cmus-remote --prev
 exec_always --no-startup-id ~/.scripts/xsettings.sh
 exec --no-startup-id "i3-msg 'focus output DisplayPort-0; workspace 12:F2; append_layout /home/terry/.config/i3/workspace-12.json'"
 exec --no-startup-id "i3-msg 'focus output DisplayPort-1; workspace 1:I'"
-exec --no-startup-id "sleep 2; exec teamspeak3"
+# exec --no-startup-id "sleep 2; exec teamspeak3"
 exec --no-startup-id "sleep 2; exec qbittorrent"
 exec --no-startup-id "sleep 2; exec Discord"
+# exec --no-startup-id ~/.scripts/polybar.sh
 
 # focus output DisplayPort-0; workspace $workspace_f3;
 # focus output DisplayPort-1; workspace $workspace_1;

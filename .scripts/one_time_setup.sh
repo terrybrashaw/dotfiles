@@ -73,7 +73,9 @@ sudo xbps-install -Sy \
     screenkey \
     zathura \
     zathura-pdf-mupdf \
-    tectonic
+    tectonic \
+    thunar \
+    tumbler
 
 # Set fish as the default shell.
 sudo runuser -l terry -c 'chsh -s /usr/bin/fish'
